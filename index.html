@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- ///// iQuery ///// -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <!-- ///// Javascript ///// -->
+    <script src="js/custom.js"></script>
+    <!-- ///// GSAP ///// -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ///// GSAP Scroll Trigger ///// -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ///// CSS ///// -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ///// Google Fonts ///// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ///// Font Awesome CDN ///// -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!--  BODY —————————— -->
+  <body>
+    <!--  HEADER ——————————  -->
+    <header>
+      <nav>
+        <ul>
+          <li>ABOUT</li>
+          <li>SKILLS</li>
+          <li>PROJECTS</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+    <!--  CONTAINER —————————— -->
+    <div id="container">
+      <!--  VISUAL —————————— -->
+      <!-- <section id="visual">
+        <div class="visualTop">
+          <h2>프론태엔드 개발자</h2>
+          <h3>PORTFOLIO</h3>
+        </div>
+        <div class="visualCenter">
+          <ul>
+            <li><img src="img/logos/placeholder.svg" alt="" /></li>
+            <li><img src="img/logos/placeholder.svg" alt="" /></li>
+            <li><img src="img/logos/placeholder.svg" alt="" /></li>
+            <li><img src="img/logos/placeholder.svg" alt="" /></li>
+            <li><img src="img/logos/placeholder.svg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="visualBottom">
+          <p>&lt;p&gt; 창의적인 시선으로 문제를 해결하고 &lt;br&gt;</p>
+          <p>빠른 배움으로 끊임없이 성장하는 &lt;br&gt;</p>
+          <p>프론트엔드 개발자입니다. &lt;/p&gt;</p>
+        </div>
+      </section> -->
+      <!--  ABOUT —————————— -->
+      <!-- <section id="aboutPage" class="page">
+        <div class="profile">
+          <div class="profileBg">
+            <h2>백현서</h2>
+            <img src="img/logos/profileplaceholder.svg" alt="" />
+            <ul>
+              <li>1998. 09. 25</li>
+              <li>경기도 고양시</li>
+              <li>010-7248-9780</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline">
+          <ul>
+            <li class="timeline1">
+              <div class="timelineSection">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="timelineDate">2025. 06. ~ 2025. 12.</div>
+                <div class="timelineContent">
+                  <h4>MBC 아카데미</h4>
+                  웹퍼블리셔 &. 프론트엔드(React) 개발자 양성 과정 수료
+                </div>
+              </div>
+            </li>
+            <li class="timeline2">
+              <div class="timelineSection">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="timelineDate">2024. 12 ~ 2025. 05.</div>
+                <div class="timelineContent">
+                  <h4>프리랜스 영상제작 PD</h4>
+                  제작지원 / 카메라 보조 / 영상 번역
+                </div>
+              </div>
+            </li>
+            <li class="timeline3">
+              <div class="timelineSection">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="timelineDate">2022. 10 ~ 2024. 07.</div>
+                <div class="timelineContent">
+                  <h4>대한민국 공군</h4>
+                  병장만기전역
+                </div>
+              </div>
+            </li>
+            <li class="timeline4">
+              <div class="timelineSection">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="timelineDate">2018. 08 ~ 2022. 05.</div>
+                <div class="timelineContent">
+                  <h4>캘리포니아주립대학교</h4>
+                  영화 영상예술학과 졸업
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+      <!--  SKILLS —————————— -->
+      <!-- <section id="skillsPage" class="page">
+        <div class="wheel"></div>
+        <ul class="skillsSlide">
+          <li id="front" class="skills">
+            <ul class="skillsContent">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <ul class="logos">
+              <li>
+                <img src="img/logos/frontend/html-5.svg" />
+              </li>
+              <li>
+                <img src="img/logos/frontend/CSS3.svg" />
+              </li>
+              <li>
+                <img src="img/logos/frontend/Javascript-shield.svg" />
+              </li>
+              <li>
+                <img src="img//logos/frontend/jquery.svg" />
+              </li>
+              <li>
+                <img src="img/logos/frontend/React-icon.svg" />
+              </li>
+              <li>
+                <img src="img/logos/frontend/gsap.svg" />
+              </li>
+              <li>
+                <img src="img/logos/frontend/swiper.svg" />
+              </li>
+              <li>
+                <img src="img/logos/frontend/Bootstrap.svg" />
+              </li>
+            </ul>
+          </li>
+          <li id="tools" class="skills">
+            <ul class="skillsContent">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <ul class="logos">
+              <li>
+                <img src="img/logos/tools/git.svg" />
+              </li>
+              <li>
+                <img src="img/logos/tools/github.svg" />
+              </li>
+              <li>
+                <img src="img/logos/tools/firebase.svg" />
+              </li>
+              <li>
+                <img src="img//logos/tools/bigquery.svg" />
+              </li>
+            </ul>
+          </li>
+          <li id="design" class="skills">
+            <ul class="skillsContent">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <ul class="logos">
+              <li>
+                <img src="img/logos/design/AI.svg" />
+              </li>
+              <li>
+                <img src="img/logos/design/photoshop.svg" />
+              </li>
+              <li>
+                <img src="img/logos/design/lightroom.svg" />
+              </li>
+              <li>
+                <img src="img//logos/design/figma.svg" />
+              </li>
+            </ul>
+          </li>
+          <li id="video" class="skills">
+            <ul class="skillsContent">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <ul class="logos">
+              <li>
+                <img src="img/logos/video/Premiere.svg" />
+              </li>
+              <li>
+                <img src="img/logos/video/AE.svg" />
+              </li>
+              <li>
+                <img src="img/logos/video/Audition.svg" />
+              </li>
+              <li>
+                <img src="img//logos/video/Resolve.svg" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section> -->
+      <!--  PROJECTS —————————— -->
+      <section id="projectsPage" class="page">
+        <ul class="projectList">
+          <li class="active">
+            <a href="#">영화 API <i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+          <li class="nonActive">
+            <a href="#">TO-DO LIST <i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+          <li class="nonActive">
+            <a href="#">숫자게임 <i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+          <li class="nonActive">
+            <a href="#"
+              >WEATHER API <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="nonActive">
+            <a href="#">FULL HOUSE <i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+          <li class="nonActive">
+            <a href="#">쇼핑몰 <i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+          <li class="nonActive">
+            <a href="#">클론코딩 <i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+          <li class="nonActive">
+            <a href="#"
+              >웹사이트 시안 <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="projectOverview">
+          <li>
+            <h3>영화찾기</h3>
+            <div class="preview">
+              <img src="img/projects/movie.PNG" alt="영화찾기" />
+            </div>
+            <div class="description">
+              <h5>2025. 00. 00.</h5>
+              <p>
+                TMDb(The Movie Database) API를 활용하여 최신 영화 정보, 인기
+                차트, 추천 영화, 상영 예정작 등을 실시간으로 제공하는 영화 정보
+                웹사이트입니다. 사용자는 원하는 영화 제목을 검색할 수 있으며,
+                영화의 포스터, 출시 연도, 장르, 평점, 줄거리 등을 직관적으로
+                확인할 수 있습니다. 다크모드/라이트모드 전환, “더보기”
+                페이지네이션, 마우스 호버 상세 설명 등 다양한 UI/UX 기능을
+                포함하고 있습니다.
+              </p>
+              <button>
+                <a href="https://paikhyunsuh-hash.github.io/MovieSearch/"
+                  >바로가기</a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <h3>TO-DO LIST</h3>
+            <div class="preview">
+              <img src="img/projects/to-do.PNG" alt="To-Do List" />
+            </div>
+            <div class="description">
+              <h5>2025. 00. 00.</h5>
+              <p>
+                TO-DO LIST 웹 애플리케이션은 사용자가 할 일을 작성하고 관리할 수
+                있는 간단한 메모형 태스크 관리 서비스입니다. 입력 → 추가 →
+                완료/미완료 변경 → 삭제 → 메모 색상 변경까지 지원하며, UI·UX와
+                코드 구조의 직관성을 고려해 설계했습니다. 순수 HTML, CSS,
+                JavaScript만으로 구현되어 있으며, DOM 조작, 이벤트 처리, 배열
+                데이터 관리 등 Web Front-End의 기본기를 탄탄하게 담고 있는
+                프로젝트입니다.
+              </p>
+              <button>
+                <a href="https://paikhyunsuh-hash.github.io/ToDoList/"
+                  >바로가기</a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <h3>숫자게임</h3>
+            <div class="preview">
+              <img src="img/projects/number.PNG" alt="숫자게임" />
+            </div>
+            <div class="description">
+              <h5>2025. 00. 00.</h5>
+              <p>
+                숫자게임은 사용자가 1~100 사이의 숫자를 입력해 컴퓨터가 랜덤으로
+                생성한 숫자를 맞추는 게임입니다. 플레이어에게는 총 5번의 기회가
+                주어지며, 매 입력마다 결과가 시각적으로 표현됩니다. 심플한
+                구조지만, 유효성 검사 → 중복 입력 방지 → 랜덤 숫자 생성 → 상태
+                변화 렌더링 → 게임 종료 처리까지 게임 로직의 핵심 흐름을 모두
+                담은 프로젝트입니다. 배경 영상과 애니메이션을 활용하여 아케이드
+                느낌의 UI를 구현해 누구나 직관적으로 즐길 수 있게 제작했습니다.
+              </p>
+              <button>
+                <a href="https://paikhyunsuh-hash.github.io/NumberGame/"
+                  >바로가기</a
+                >
+              </button>
+            </div>
+          </li>
+          <li>
+            <h3>날씨</h3>
+            <div class="preview">
+              <img src="img/projects/number.PNG" alt="숫자게임" />
+            </div>
+            <div class="description">
+              <h5>2025. 00. 00.</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                sequi qui esse nemo debitis quis, itaque quos modi molestiae
+                omnis, veritatis dignissimos enim nobis. Nulla dolore fuga ab
+                facilis sed.
+              </p>
+              <button>
+                <a href="https://paikhyunsuh-hash.github.io/Weather/"
+                  >바로가기</a
+                >
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--  PROJECTS 2 —————————— -->
+      <section id="projectsPage2" class="page">
+        <h2>CLONE CODING</h2>
+        <ul class="cloneCoding">
+          <li>
+            <div class="projectPreview">
+              <img src="img/logos/placeholder.svg" />
+            </div>
+            <div class="projectOverview">
+              <h3>프로젝트명</h3>
+              <p>lorem ipsum</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt neque et esse illum minus quos. Iusto consectetur
+                exercitationem neque natus quae voluptates, reiciendis laborum
+                pariatur qui tenetur, saepe provident ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="projectPreview">
+              <img src="img/logos/placeholder.svg" />
+            </div>
+            <div class="projectOverview">
+              <h3>프로젝트명</h3>
+              <p>lorem ipsum</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt neque et esse illum minus quos. Iusto consectetur
+                exercitationem neque natus quae voluptates, reiciendis laborum
+                pariatur qui tenetur, saepe provident ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="projectPreview">
+              <img src="img/logos/placeholder.svg" />
+            </div>
+            <div class="projectOverview">
+              <h3>프로젝트명</h3>
+              <p>lorem ipsum</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt neque et esse illum minus quos. Iusto consectetur
+                exercitationem neque natus quae voluptates, reiciendis laborum
+                pariatur qui tenetur, saepe provident ipsum.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="progressBar"></div>
+      </section>
+      <!--  CONTACT —————————— -->
+      <!-- <section id="contactPage" class="page">
+        <div class="contactInfo">
+          <h2>CONTACT</h2>
+          <div class="contactSlide">
+            <ul class="contactList">
+              <li>010-7248-9780</li>
+              <li>@hyunsuhpaik@gmail.com</li>
+              <li>@hyunsuhpaik</li>
+            </ul>
+            <ul class="links">
+              <li>
+                <a href="#">자기소개서</a>
+              </li>
+              <li>
+                <a href="#">이력서</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="closing">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nihil
+            commodi impedit.
+          </p>
+        </div>
+      </section> -->
+    </div>
+    <!--  FOOTER —————————— -->
+    <!-- <footer>
+      <p>ⓒ 2025. 백현서 All rights reserved</p>
+    </footer> -->
+  </body>
+</html>
