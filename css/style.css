@@ -60,6 +60,23 @@ header nav ul {
 }
 header nav ul li {
   padding: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+}
+header nav ul li:hover {
+  color: #fff;
+}
+header nav ul li:nth-child(1):active {
+  color: #f67b2e;
+}
+header nav ul li:nth-child(2):active {
+  color: #ff6969;
+}
+header nav ul li:nth-child(3):active {
+  color: #69ffad;
+}
+header nav ul li:nth-child(4):active {
+  color: #be69ff;
 }
 
 /* CONTAINER */
