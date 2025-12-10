@@ -572,47 +572,60 @@ section {
   position: relative;
 }
 /* —————————— CONTACT INFO */
+/* #contactPage {
+  background-color: #ccc;
+} */
+#contactPage {
+  height: calc(100% - 60px -24px);
+}
+.contactInfo {
+  width: 100%;
+  height: calc(100% - 24px);
+  padding: 50px;
+  box-sizing: border-box;
+}
 .contactInfo h2 {
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: normal;
   color: #f67b2e;
   position: absolute;
-  left: 10%;
+  left: 50%;
   top: 10%;
+  transform: translateX(-50%);
+}
+.contactInfo h2 span {
+  display: block;
 }
 #contactPage .contactSlide {
   position: absolute;
-  left: 10%;
-  top: 20%;
-  width: 300px;
-  background-color: #fff;
-  color: #000;
-}
-
-.contactSlide .links {
-  background-color: #f67b2e;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px auto;
+  width: 100%;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 }
-.contactSlide .links li {
-  width: 50%;
-  text-align: center;
+.contactSlide li {
+  margin-top: 25px;
+}
+.contactSlide .links li a {
+  display: flex;
 }
 
-/* —————————— CLOSING */
-/* .closing {
-  font-size: 4rem;
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  padding: 50px;
-  width: 50%;
-} */
 /* ————— FOOTER */
-/* footer {
+footer {
   background-color: #fff;
   color: #000;
   text-align: center;
-} */
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+}
 
 /* ————————————————————  반응형 ———————————————————— */
 
