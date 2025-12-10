@@ -255,24 +255,19 @@
           <h2>JAVASCRIPT</h2>
           <ul class="projectList">
             <li class="active">
-              <a href="#">영화 API <i class="fa-solid fa-chevron-right"></i></a>
+              영화 API <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li class="nonActive">
-              <a href="#"
-                >TO-DO LIST <i class="fa-solid fa-chevron-right"></i
-              ></a>
+              TO-DO LIST <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li class="nonActive">
-              <a href="#">숫자게임 <i class="fa-solid fa-chevron-right"></i></a>
+              숫자게임 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li class="nonActive">
-              <a href="#"
-                >WEATHER API <i class="fa-solid fa-chevron-right"></i
-              ></a>
+              WEATHER API <i class="fa-solid fa-chevron-right"></i>
             </li>
           </ul>
         </div>
-
         <ul class="projectOverview">
           <li>
             <!-- <h3>영화찾기</h3> -->
@@ -334,7 +329,6 @@
             </div>
           </li>
           <li>
-            <h3>숫자게임</h3>
             <div class="preview">
               <video autoplay loop muted class="movieVid1">
                 <source src="img/projects/numberGame.mp4" />
@@ -367,7 +361,6 @@
             </div>
           </li>
           <li>
-            <h3>날씨</h3>
             <div class="preview">
               <video autoplay loop muted class="movieVid1">
                 <source src="img/projects/weather.mp4" />
@@ -405,15 +398,17 @@
       </section>
       <!--  PROJECTS 2 —————————— -->
       <section id="projectsPage2" class="page">
-        <h2>CLONE CODING</h2>
-        <ul class="cloneCoding">
+        <h2>WEB DESIGN</h2>
+        <ul class="projectList2">
           <li>
-            <div class="projectPreview">
-              <img src="img/logos/placeholder.svg" />
+            <div class="preview">
+              <video autoplay loop muted class="movieVid1">
+                <source src="img/projects/fullHouse.mp4" />
+              </video>
             </div>
             <div class="projectOverview">
-              <h3>프로젝트명</h3>
-              <p>lorem ipsum</p>
+              <h3>FULL HOUSE</h3>
+              <h5>2025. 00. 00</h5>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Incidunt neque et esse illum minus quos. Iusto consectetur
@@ -423,12 +418,12 @@
             </div>
           </li>
           <li>
-            <div class="projectPreview">
+            <div class="preview">
               <img src="img/logos/placeholder.svg" />
             </div>
             <div class="projectOverview">
-              <h3>프로젝트명</h3>
-              <p>lorem ipsum</p>
+              <h3>쇼핑몰</h3>
+              <h5>2025. 00. 00</h5>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Incidunt neque et esse illum minus quos. Iusto consectetur
@@ -438,15 +433,15 @@
             </div>
           </li>
           <li>
-            <div class="projectPreview">
+            <div class="preview">
               <img src="img/logos/placeholder.svg" />
             </div>
             <div class="projectOverview">
-              <h3>프로젝트명</h3>
-              <p>lorem ipsum</p>
+              <h3>클론코딩</h3>
+              <h5>2025. 00. 00</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Incidunt neque et esse illum minus quos. Iusto consectetur
+                Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit.Incidunt neque et esse illum minus quos. Iusto consectetur
                 exercitationem neque natus quae voluptates, reiciendis laborum
                 pariatur qui tenetur, saepe provident ipsum.
               </p>
@@ -456,7 +451,7 @@
         <div class="progressBar"></div>
       </section>
       <!--  CONTACT —————————— -->
-      <!-- <section id="contactPage" class="page">
+      <section id="contactPage" class="page">
         <div class="contactInfo">
           <h2>CONTACT</h2>
           <div class="contactSlide">
@@ -481,11 +476,52 @@
             commodi impedit.
           </p>
         </div>
-      </section> -->
+      </section>
     </div>
     <!--  FOOTER —————————— -->
     <!-- <footer>
       <p>ⓒ 2025. 백현서 All rights reserved</p>
     </footer> -->
+    <!--GSAP-->
+    <script>
+      $(function () {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const container = document.querySelector("#projectsPage2");
+        const slider = document.querySelector(".projectList2");
+        const listItems = gsap.utils.toArray(".projectList2 li");
+
+        if (container && slider && listItems.length) {
+          const headerHeight = 60;
+
+          gsap.to(slider, {
+            x: () => -(slider.scrollWidth - container.offsetWidth),
+            ease: "none",
+
+            scrollTrigger: {
+              trigger: container,
+              pin: true,
+
+              start: "top " + headerHeight + "px",
+
+              end: () => "+=" + (slider.scrollWidth - container.offsetWidth),
+              scrub: 1,
+              invalidateOnRefresh: true,
+
+              snap: {
+                snapTo: listItems.map((li, i) => {
+                  const xPos = li.offsetLeft;
+                  const scrollProgress =
+                    xPos / (slider.scrollWidth - container.offsetWidth);
+                  return scrollProgress;
+                }),
+                duration: 0.3,
+                delay: 0.1,
+              },
+            },
+          });
+        }
+      });
+    </script>
   </body>
 </html>
